@@ -1,0 +1,2104 @@
+/**********************************************/
+/****************** GENERAL *******************/
+/*********************************************/
+*{
+    margin: 0; 
+    padding: 0; 
+    outline-style:none;
+}
+
+a{
+    text-decoration: none; 
+    color:#000; 
+    display: block; 
+}
+
+li{
+    list-style: none; 
+}
+
+a:hover{
+    text-decoration:none; 
+    color:black; 
+}
+
+.gras{
+    font-family: 'overpassregular';
+}
+
+/*********************************************/
+/****************** BODY *********************/
+/*********************************************/
+body{
+    font-family: 'overpassthin', sans-serif;
+    overflow-x: hidden;
+    position: relative;
+    margin-top:200px; 
+}
+
+.styleh1Page{
+    font-size: 2em; 
+    text-align: center; 
+    text-transform: uppercase; 
+}
+
+.stylehrPage{
+    margin: 20px auto 50px auto; 
+    width : 30%; 
+    background : black; 
+}
+
+/*********************************************/
+/****************** HEADER *******************/
+/*********************************************/
+#header{
+    position: relative;
+    bottom: 20px; 
+}
+header{
+    height: 70px;
+    background: #fff;
+}
+
+/******** LOGO + PICTO ********/
+.logoEntier{
+    display : none;
+}
+
+.logoLPC{
+    width: 60px;  
+    padding-top:20px; 
+}
+
+.cote-droit p{
+    font-size: 10px; 
+}
+
+.logo{
+    padding-left:10px; 
+}
+
+.picto{
+    padding-top:20px; 
+    justify-content: space-around; 
+}
+
+.compte a img{
+    width: 15px; 
+}
+
+/************** NAV *************/
+/********* MENU BURGER *********/
+nav{
+    position: relative; 
+    bottom : 30px; 
+    left: 15px; 
+    width : 200px; 
+}
+
+.pictoBurger{
+    width:20px; 
+    position: relative; 
+    bottom : 30px; 
+}
+
+.niveau1{
+    position: relative; 
+    left: -300px; 
+    top : -10px; 
+    background: #fff; 
+    width: 250px;    
+    text-transform: uppercase;
+}
+
+.niveau2Femme, .niveau2Homme,.niveau2Enfant, .niveau2Accessoire, .niveau2Boutique {
+    display: none; 
+}
+
+.niveau2 li a {
+    font-family: 'overpassthin', sans-serif;
+    font-size: 15px; 
+    margin: 0px; 
+
+}
+
+.niveau2 li {
+        text-align: right;
+}
+
+.sousMenu{
+    list-style: none; 
+    padding : 15px; 
+}
+
+ul.niveau1 li{
+    font-family: 'overpassregular', sans-serif;   
+}
+
+.sousMenuBoutique{
+    height: 200px;  
+}
+
+/********* POP UP CONNEXION *********/
+.popUp{
+    background : url(../Multi/Image/fondPopupCompte2.jpg) no-repeat;
+    background-size:cover; 
+    width: 300px;
+    height:350px;  
+    display:none;
+    text-align: center; 
+    z-index: 100;
+    position: absolute; 
+    left : -3%; 
+}
+
+.fondBlancPopUp{
+    background: #fff;
+    width: 90%; 
+    height : 300px; 
+    position: absolute; 
+    left : 5%; 
+    top : 5%; 
+    padding-top:20px; 
+}
+
+.fondOpacity{
+    display: none;
+    z-index: 1000;
+    left : 0; 
+    top :0; 
+}
+
+.popUp p{
+    font-size : 0.8em; 
+    font-family: 'overpassregular';
+}
+
+#submitCompte{
+    border : 0; 
+    background: #000; 
+    color : #fff; 
+    font-size : 0.8em;
+    padding : 10px;  
+}
+
+.popUp form input{
+    margin : 10px; 
+}
+
+.lienPopUp{
+    padding-right:10px; 
+}
+
+/************* RECHERCHE **************/
+
+
+.rechercheLG{
+    display: none; 
+}
+
+.recherche img{
+    width: 40%; 
+}
+
+.recherche button{
+    background : none; 
+    border : 0; 
+}
+
+.rechercheXS{
+    background : rgb(255, 255, 255); 
+    width : 120%; 
+    height : 6em; 
+    z-index : 100; 
+    position : fixed; 
+    left : 0; 
+    display : none; 
+}
+
+.rechercheXS input {
+    border : none; 
+    border-bottom : 0.5px solid black; 
+    width: 50%; 
+    color : rgb(90, 90, 90); 
+    margin-left : 10%; 
+    margin-top :30px; 
+    font-size: 0.8em; 
+}
+
+/*********************************************/
+/****************** MAIN *********************/
+/*********************************************/
+
+main{
+    margin-top : -130px; 
+}
+
+/*================ ACCUEIL ================*/
+/******** PHOTOS ACCUEIL *********/
+
+
+.photoFemmesSummer, .photoHommesSummer, .photoAccessoiresDesktop, .photoAccessoiresDesktop, .photoNouveautes, .photoEnfantsDesktop {
+    display: none; 
+}
+
+.photoAccessoiresMobile, .photoEnfantsMobile{
+    display: block; 
+}
+
+.lignePhoto a h2{
+    text-align: center; 
+    text-transform: uppercase;
+    font-size:1.5em; 
+    padding-top:20px; 
+    font-family: 'overpassregular', sans-serif;
+}
+
+.lignePhoto a h3{
+    text-align: center; 
+    text-transform: uppercase;
+    font-size: 1.2em;
+    padding: 15px 0 10px 0; 
+    font-family: 'overpassregular', sans-serif;
+}
+
+.photoAccueil1 hr, .photoAccueil2 hr{
+    background-color :black;
+    width : 70%;
+    margin: 0 auto; 
+}
+
+.lignePhoto img{
+    max-width: 100%;
+}
+
+.ligneMilieu{
+    order: -1; 
+}
+
+.blocTexteAccueil{
+    display : none; 
+}
+
+.photoPromos, .photoEnfantsMobile, .photoAccessoiresMobile, .ligneMilieu{
+    padding : 0; 
+    margin : 0; 
+}
+
+/******** MAP + AVIS  *********/
+
+.map_avis{
+    background: rgb(223, 223, 223);
+
+}
+
+.avis{
+padding : 30px 30px 10px 40px; 
+}
+
+.map{
+    border-bottom: 3px solid white;
+}
+.map h2{
+    font-size: 2em; 
+    padding: 30px 10px 0 30px;   
+}
+
+.map p{
+    padding: 15px 30px 0 30px;    
+}
+.map div{
+    font-size: 4em; 
+    text-align: center; 
+}
+
+/*================ PAGE PRODUIT ================*/
+/********** Fil ariane page produit **********/
+
+.filAriane li{
+    margin-left:-30px; 
+    font-size: 0.8em; 
+    text-transform: uppercase; 
+    font-family: 'overpassregular';
+}
+
+.pageActuel{
+    font-family: 'overpassthin_italic'!important;
+}
+
+/************* Photos article *************/
+
+.phototaille1 img, .phototaille2 img{
+    width: 100%;    
+}
+
+.photoDroite input, .photoGauche input{
+    display : none; 
+}
+
+.photoDroite img, .photoGauche img{
+    transition: transform 0.25s ease;
+    cursor: zoom-in;
+}
+
+.photoDroite input:checked ~ label > img {
+    transform: scale(2);
+    cursor: zoom-out;
+    position: absolute;
+    top : 100px; 
+    left : 100%; 
+    z-index: 1500;
+}
+
+.photoGauche input:checked ~ label > img{
+    transform: scale(2);
+    cursor: zoom-out;
+    position: absolute;
+    top : 100px; 
+    z-index: 1500;
+}
+
+.phototaille1, .phototaille2 {
+    margin : 0; 
+    padding : 5px; 
+}
+
+#taille{
+    width : 300px; 
+    border-radius : 0px; 
+    border : none; 
+    border-bottom: 0.5px solid black; 
+}
+
+/************ description produit ************/
+
+.descriptionProduit{
+    right : 20px; 
+    padding-top: 20px; 
+    padding-left : 50px; 
+}
+
+.descriptionProduit h2{
+    font-size : 1.6em; 
+}
+
+.descriptionProduit h3{
+    font-family: 'overpasslight';
+    font-size: 1em; 
+}
+
+#prixProduit{
+    font-family: 'overpasssemibold';
+}
+
+#titreProduit{
+    text-transform: uppercase; 
+    font-size : 1.4em; 
+    font-family: 'overpasslight';
+
+}
+.descriptionProduit p {
+    font-size : 0.9em; 
+}
+
+.descriptionProduit hr {
+    background : black; 
+}
+
+#couleurProduit{
+    position: relative; 
+    top : -1px; 
+    width : 28px; 
+    height : 28px; 
+    margin-left: 15px; 
+}
+
+#couleurProduit1{
+    width : 25px; 
+    height : 25px; 
+    margin-left : 15px; 
+}
+
+.couleurProduitBleu{
+    background : #8F99AF; 
+}
+
+.couleurProduitBleuFonce{
+    background : rgb(10, 26, 59); 
+}
+
+.couleurProduitBordure{
+    border : 3px double #fff;
+    width : 28px; 
+    height : 28px; 
+} 
+.couleurProduitBordure1{
+    display: none;
+    border : 3px double #fff;
+    width : 25px; 
+    height : 25px; 
+} 
+
+#choixTaille{
+    margin-top : 40px; 
+}
+.ui-selectmenu-text, .ui-menu-item-wrapper{
+    font-family: 'overpassthin';
+}
+.ui-selectmenu-button.ui-button{
+    width : 50%
+}
+
+#ajoutPanier{
+    margin-top : 20px; 
+    width : 50%; 
+    border : none; 
+    border-radius : 0; 
+    background : black; 
+    color : white; 
+    height : 35px; 
+}
+
+#ajoutFavori{
+    border : none; 
+    border-radius : 0; 
+    background : black; 
+    color : white; 
+    width : 35px; 
+    height : 35px;
+}
+
+#accordion{
+    margin-top : 20px; 
+}
+
+.ui-accordion .ui-accordion-content{
+    font-family: 'overpassthin';
+    font-size : 0.8em; 
+    color : rgb(94, 94, 94);
+    border : 0; 
+}
+
+.ui-accordion .ui-accordion-header{
+    margin : 20px 0 0 0 !important; 
+}
+
+#accordion .ui-state-active{
+    border-bottom : 0 !important;
+}
+
+#accordion .ui-state-default{
+    border : 0 !important; 
+    border-bottom: 1px solid black !important; 
+}
+
+.ui-icon{
+    display : none !important; 
+}
+
+#accordion td{
+    width : 33%; 
+    vertical-align: top; 
+    border-bottom: 0.5px solid rgb(94, 94, 94);
+    padding: 20px 0 20px 5px;  
+}
+
+#accordion table{
+    margin-bottom: 30px; 
+}
+
+
+/************ Article similaire ************/ 
+
+.articleSimi1{
+    width : 40%; 
+    margin : 50px auto; 
+
+}
+.articleSimilaire div img{
+    width : 200px; 
+}
+
+.textArticleSimi{
+    margin-top: 10px; 
+    font-size: 0.8em; 
+}
+
+.articleSimilaire h3{
+    font-size: 1em; 
+    margin-top : 30px;
+    margin-left : 10px; 
+}
+
+/*================= PAGE FAVORI ==================*/
+.ligneFavori{
+    width : 90%; 
+    margin: 20px auto;
+}
+.ligneFavori .ui-selectmenu-button.ui-button{
+    width: 4em; 
+    text-align: center;
+    margin-top : 20px; 
+}
+
+.ligneFavori .ui-selectmenu-text{
+    font-size: 0.8em; 
+}
+
+.ligneFavori .ui-menu-item-wrapper{
+    font-size: 0.6em; 
+}
+
+.ligneFavori img{
+    margin: 0 auto;
+}
+
+.ligneFavori i{
+    text-align: right; 
+    margin-top : 20px; 
+}
+
+.ligneFavori p{
+    margin-top : 20px; 
+}
+
+.ligneFavori3{
+    margin-bottom: 100px; 
+}
+
+.favoriVide{
+    display: none;
+    width : 70%; 
+    border: 1px solid #000; 
+    padding : 40px; 
+    margin : 30px auto; 
+    text-align: center; 
+}
+
+.favoriVide i{
+    font-size: 3em; 
+    margin-bottom: 20px; 
+}
+
+/*================= PAGE PANIER ==================*/
+.lignePanier{
+    width : 90%; 
+    margin: 20px auto;
+}
+.lignePanier .ui-selectmenu-button.ui-button{
+    width: 4em; 
+    text-align: center;
+    margin-top : 20px; 
+}
+
+.lignePanier .ui-selectmenu-text{
+    font-size: 0.8em; 
+}
+
+.lignePanier .ui-menu-item-wrapper{
+    font-size: 0.6em; 
+}
+
+.lignePanier img{
+    margin: 0 auto;
+}
+
+.lignePanier i{
+    text-align: right; 
+    margin-top : 20px; 
+}
+
+.lignePanier p{
+    margin-top : 20px; 
+}
+
+.lignePanier3{
+    margin-bottom: 100px; 
+}
+
+.PanierVide{
+    display: none;
+    width : 70%; 
+    border: 1px solid #000; 
+    padding : 40px; 
+    margin : 30px auto; 
+    text-align: center; 
+}
+
+.PanierVide i{
+    font-size: 3em; 
+    margin-bottom: 20px; 
+}
+
+.totalPanier{
+    margin-top : -70px; 
+}
+
+.totalPanier hr{
+    background: #222; 
+    width : 70%; 
+    margin : 0 auto; 
+}
+.totalPanier p{
+    margin-left : 20%; 
+    padding-top : 10px; 
+    font-size: 1.2em; 
+}
+.formCGV{
+    margin-left : 20%; 
+}
+
+.lienCGV{
+    font-size : 0.8em; 
+}
+
+.boutonValidationPanier{
+    background: #000; 
+    border : none;
+    color : white; 
+    padding: 5px; 
+    width : 20%; 
+    margin-bottom: 100px; 
+}
+
+/*================ PAGE PRESSE/BLOG ================*/
+
+.article{
+    width : 90%; 
+    margin : 0 auto 90px auto; 
+}
+
+.article img{
+padding : 0; 
+}
+
+.article h2{
+    font-family: 'overpassregular';
+    font-size: 1.5em; 
+}
+
+.auteurArticle{
+    font-size: 0.8em; 
+}
+
+.auteurArticleDroite{
+    text-align: right; 
+}
+
+.articleTexte1{
+    font-family: 'overpasslight';
+    padding-bottom: 20px; 
+}
+
+.articleTexte2{
+    font-family: 'overpassthin_italic';
+    font-size: 0.9em; 
+}
+
+.articleTexte{
+    width: 100%; 
+    background: #fff; 
+    -webkit-box-shadow: 2px 2px 22px -11px #000000; 
+    box-shadow: 2px 2px 22px -11px #000000;
+    padding: 20px; 
+}
+
+
+.article a{
+    font-size: 0.6em; 
+    text-align: right; 
+    text-transform: uppercase; 
+    font-family: 'overpassregular';
+
+}
+
+.changerPage{
+    text-align: center; 
+    text-transform: uppercase; 
+    font-size: 0.8em; 
+    margin-bottom: 100px; 
+}
+
+/*================ PAGE ARTICLE  ================*/
+.pageArticle h2{
+    font-family: 'overpassregular';
+    font-size : 1.5em; 
+}
+
+.auteurPageArticle{
+    font-size: 0.8em; 
+}
+.imagePageArticle{
+    text-align: center;  
+}
+
+.imagePageArticle img{
+    width : 90%; 
+}
+
+.articlePageTexte1{
+    margin : 0 auto; 
+    width : 80%; 
+    background: #fff; 
+    position: relative;
+    top : -50px; 
+    padding : 10px; 
+    -webkit-box-shadow: 2px 2px 22px -11px #000000; 
+    box-shadow: 2px 2px 22px -11px #000000;
+    text-transform: uppercase; 
+    font-size: 1em; 
+    font-family: 'overpassregular';
+
+}
+
+.articlePageTexte2{
+    width : 90%; 
+    margin : -20px auto 30px auto; 
+    font-family: 'overpasslight';
+    font-size : 1.1em; 
+}
+
+.pageArticleContenu{
+    width : 80%; 
+    margin : 0 auto 100px auto; 
+}
+
+/*================ PAGE EVENEMENT ================*/
+
+.container {
+    position: relative;
+}
+
+.monSlider {
+    display: none;
+    text-align: center; 
+}
+
+.monSlider iframe{
+    width: 80%; 
+    height : 400px; 
+}
+
+.descVideoEvent{
+    width: 80%;
+    margin: 0 auto; 
+    text-align: justify; 
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+.next, .prev {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.caption-container {
+    padding-top : 20px;
+    padding-bottom : 2px;
+    text-align: center;
+    background-color: #222;
+    color: white;
+    font-size: 1em; 
+    text-transform: uppercase; 
+    width: 80%; 
+    margin: 20px auto; 
+}
+
+.ligneMiniature{
+    width: 80%; 
+    margin : 0 auto;
+    margin-bottom: 100px; 
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column {
+    float: left;
+    width: 16.66%;
+}
+.column img {
+    height: 80px;
+    padding: 2px; 
+}
+
+.demo {
+    opacity: 0.6;
+}
+
+.active, .demo:hover {
+    opacity: 1;
+}
+
+/*================= PAGE CONTACT =================*/ 
+
+.mainContact{
+    text-align: center;
+}
+
+.mainContact p{
+    font-family: 'overpassthin', 'sans-serif';
+}
+
+.formContact input, textarea, button{
+    width: 375px;
+    border : none; 
+    border-bottom : 0.5px solid #000; 
+    margin-top:10px; 
+    padding-bottom: 5px; 
+}
+
+#msgContact{
+    padding-top : 10px; 
+    padding-left: 10px;
+    border: 0.5px solid #000; 
+}
+.buttonContact button{
+    margin-bottom: 50px;
+    border : none; 
+    background: #000; 
+    color: #fff; 
+    padding-top: 5px; 
+}
+
+.inputFormContact{
+    margin-top: 10px;
+}
+
+#msgContact{
+    height: 100px;
+}
+
+.formContact{
+    text-align: center;
+}
+
+.nousContacter{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.nousContacterL1{
+    margin-top: 30px;
+}
+
+.nousContacter p{
+    margin : 0;
+}
+
+.nousContacter p span{
+    text-transform: uppercase; 
+}
+
+.nousContacterL2, .nousContacterL3{
+    margin-top: 30px;
+}
+
+
+
+.mainContact h3{
+    font-family: 'overpasslight';
+    text-transform: uppercase; 
+    font-size: 1.5em; 
+}
+
+/*=============== PAGE MAPS ===============*/ 
+
+.mapLigne1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.mapLigne2{
+    margin-bottom: 20px;
+}
+
+.trouverMaga h1{
+    text-align: left; 
+    margin-top: 15px;
+    margin-left : 20px; 
+    padding : 0 30px;
+}
+
+.trouverMaga hr{
+    background-color: black;
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.mapLigne2 iframe{
+    margin-bottom: 30px;
+}
+
+.searchMagasin{
+    margin : 50px auto; 
+    width : 50%; 
+}
+
+#magaTrouver{
+    border : none; 
+    border-bottom : 1px solid black; 
+}
+
+.mapLigne2 div iframe{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.trouverMaga a i{
+    position: relative;
+    top: 5px;
+}
+
+.googleMap {
+    margin-top: 15px;
+}
+
+/*================= PAGE AVIS =================*/ 
+
+.formPageAvis input, textarea, button{
+    width: 375px;
+    border : none; 
+    border-bottom : 0.5px solid #000; 
+    margin-top:10px; 
+    padding-bottom: 5px; 
+}
+
+.formPageAvis{
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.bPageAvis{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.inputFormPageAvis, #msgRecrutement{
+    margin-top: 10px;
+}
+
+.avis1, .avis2, .avis3, .avis4{
+    margin-bottom: 50px;
+}
+
+.h3PageAvis {
+    font-family: 'overpassregular', 'sans-serif';
+}
+
+.avisGene{
+    text-align: center;
+    margin-top: 50px;
+    
+}
+
+.hrAvis{
+    background-color: black;
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.avisPlusRe{
+   /* margin-bottom: 35px; */
+}
+
+.changerPageAvis{
+    text-align: center; 
+}
+
+
+/*============= PAGE PERSONNAL SHOPPER ===============*/ 
+
+.presentationPs p{
+    text-align: center;
+}
+
+.formCoordonnes{
+    text-align: center;
+}
+
+.l1Personal {
+    text-align: center;
+}
+
+.formCoordonnes input, textarea, button{
+    width: 375px;
+}
+
+.formCoordonnes button{
+    margin-bottom: 40px;
+    border : none; 
+    background: #000; 
+    color: #fff; 
+    padding-top:5px; 
+}
+
+#msgCoordonnes{
+    height: 100px;
+    border: 0.5px solid #000; 
+    padding-top : 10px; 
+    padding-left : 10px; 
+}
+
+.inputFormCoordonnes, #msgCoordonnes{
+    margin-top: 10px;
+
+}
+
+.inputFormCoordonnes input{
+    border : none; 
+    border-bottom: 0.5px solid #000; 
+    padding-bottom: 5px; 
+    margin-bottom: 5px; 
+}
+
+.l2Personal{
+    margin-top: 30px;
+}
+
+.calendrierPs{
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.h3Calendrier, .h3Coordonnes{
+    font-family: 'overpasslight';
+    text-transform: uppercase; 
+    font-size: 1.8em; 
+}
+
+.hrCalendrier, .hrCoordonnes{
+    background-color: black;
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+#photoPersonnal{
+    max-width: 100%;
+}
+
+#centreinteret{
+
+    font-size: 0.8em; 
+    margin-left : -60px; 
+}
+
+
+/*=============== QUI SOMMES NOUS==================*/ 
+
+.quiSomme h1{
+    text-align: center;
+    margin-top: 40px;
+    font-family: 'overpassregular', 'sans-serif';
+}
+
+.hrQuiSomme{
+    background-color: black;
+    width: 35%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.quiSomme h3{
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.photoQui{
+    text-align: center;
+}
+
+.quiSomme p{
+    text-align: center;
+    margin-left: 20px;
+    font-size: 25px;
+}
+
+.quiSommeP2{
+    margin-bottom: 45px;
+    margin-top: 15px;
+}
+
+.h3Strategie{
+    margin-top: 50px;
+    font-family: 'overpassregular', 'sans-serif';
+}
+
+.hrStrategie{
+    background-color: black;
+    width: 30%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.photoQui1, .photoQui2, .photoQui3, .{
+    width: 100%;
+}
+
+
+
+.photoQui4{
+    max-width: 100%;
+}
+
+.photoQUIl1{
+    text-align: center;
+}
+
+/*================= PAGE CATALOGUE ==================*/ 
+
+.sousTrierN2, .sousTypeN2, .sousStyleN2, .sousTailleN2, .sousCouleurN2{
+    width: 125px;
+    margin-bottom: 30px;
+    margin-top: 15px;
+}
+
+.cataP{
+    text-align: center;
+}
+
+.ligneCata1, .ligneCata2, .ligneCata3, .ligneCata4{
+    margin-bottom: 35px;
+}
+
+.menuChoixCatalo .ui-selectmenu-button.ui-button{
+    width: 9em; 
+    text-align: center;
+    margin-top : 20px; 
+    
+}
+
+.menuChoixCatalo .ui-selectmenu-text{
+    font-size: 0.8em; 
+    text-align: center;
+}
+
+
+
+.cataP h2{
+    font-family: 'overpasslight';
+}
+
+.menuChoixCatalo{
+    margin-top: 250px;
+    margin-bottom: -100px;
+}
+
+.menuChoixCatalo p{
+    margin-left: 11px;
+}
+
+
+.tri{
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+
+
+.cataP img{
+    max-width: 100%;
+    margin-top: 100px;
+}
+
+.cataP h3{
+    margin-top: 10px;
+    font-size: 1em;
+    font-family: 'overpasssemibold';
+}
+
+.cataP p{
+    font-family: 'overpasssemibold';
+}
+
+
+
+/*================ PAGE RECRUTEMENT ===============*/ 
+
+.mainRecrutement h3{
+    font-family: 'overpasslight';
+    margin-bottom: 10px;
+    text-transform: uppercase; 
+    font-size : 1.5em; 
+}
+
+.formRecrutement{
+    text-align: center;
+    margin-top : 20px; 
+}
+
+.formRecrutement input, textarea, button{
+    width: 375px;
+}
+
+.formRecrutement button{
+    margin-bottom: 40px;
+    background: #000; 
+    border : none; 
+    color : white; 
+    padding-top : 5px; 
+}
+
+#msgRecrutement{
+    height: 100px;
+}
+
+.inputFormRecrutement, #msgRecrutement{
+    margin-top: 10px;
+}
+
+.inputFormRecrutement input{
+    border : none; 
+    border-bottom : 0.5px solid #000; 
+    padding-bottom: 5px; 
+}
+
+.uploadRecrutement1{
+    margin-top: 10px;
+}
+
+.uploadRecrutement2{
+    margin-bottom: 10px;
+}
+
+.mainRecrutement{
+    text-align: center;
+}
+
+.h3Recrutement{
+    margin-top: 10px;
+}
+
+#imageRecru {
+    margin-bottom: 35px;
+    max-width: 100%;
+}
+
+/*================ PAGE FAQ ===============*/ 
+.faq .questions{
+    padding : 0 30px 20px 30px; 
+}
+
+.faq .questions h2{
+    font-size: 1.5em;
+}
+
+.faq .questions p{
+    font-size : 0.8em; 
+}
+
+.ancre{
+    display: block; 
+    margin-top : -100px; 
+    padding-top : 100px; 
+}
+
+/*================ PAGE MENTIONS LEGALES ===============*/ 
+
+.mentionslegales h2{
+    text-transform: uppercase; 
+    font-size : 1.2em; 
+    font-family: 'overpassregular';
+    margin-top: 50px; 
+    padding-left : 20px; 
+
+}
+.mentionslegales p{
+    padding : 0 50px; 
+    font-size: 0.8em; 
+}
+
+.mentionslegales{
+    margin-bottom: 100px; 
+}
+
+/*================ PAGE PLAN DU SITE ===============*/
+
+.architecture{
+    margin-left: 100px; 
+}
+
+.architecture a{
+    text-transform: uppercase; 
+}
+
+.architecture .accueil{
+    font-family: 'overpassregular';
+    font-size: 1.5em; 
+}
+
+.architecture .categories{
+    margin-left: 50px; 
+    margin-top : 50px; 
+    font-family: 'overpasslight';
+}
+
+.architecture .sousCategories{
+    margin-left : 100px; 
+    margin-top : 10px; 
+}
+
+
+/*********************************************/
+/****************** FOOTER *******************/
+/*********************************************/
+footer{ 
+    width: 100%; 
+}
+
+/******** REASSURANCE *********/
+
+.re-assurance {
+    text-align: center;
+}
+
+.re-assurance div{
+    padding: 10px;
+    border : 0.2px solid black; 
+}
+
+.re-assurance h3 {
+    text-transform: uppercase; 
+    font-size: 1.2em; 
+    font-family: 'overpasssemibold';
+}
+
+.re-assurance p {
+    font-size: 0.8em; 
+    padding-right: 5px; 
+}
+
+/******** NEWSLETTER *********/
+
+.news{
+    background-color: #e6f1fa;
+    text-align: center;
+    color:#000; 
+    padding-bottom: 20px; 
+}
+
+.newsTexte{
+    font-size:12px; 
+}
+
+.inscrit{
+    font-size: 20px;
+    padding-top:10px; 
+}
+
+#email{
+    border: none; 
+    border : 0.5px solid lightgray;
+    padding-left : 10px; 
+    font-size: 12px; 
+    width: 250px;
+    height :40px;  
+}
+
+#btnEmail{
+    background: #000; 
+    color : #fff; 
+    width : 110px;
+    height : 39px; 
+    padding : 5px;  
+    border :none; 
+}
+
+/******** BAS *********/
+
+.bas{
+    margin: 0 auto;
+    background:rgb(223, 223, 223); 
+}
+
+.liste{
+    margin-left : 80px;
+    padding-top: 15px; 
+}
+
+.liste li a{
+    text-align: left;
+}
+
+footer div img{
+    width: 35px;
+    margin-right: 15px;
+}
+
+.niveau2BoutiqueFooter, .niveau2ActuFooter, .niveau2LiensFooter, .niveau2AideFooter{
+    display: none; 
+}
+
+.niveau2BoutiqueFooter a, .niveau2ActuFooter a, .niveau2LiensFooter a, .niveau2AideFooter a{
+    margin-bottom: 10px !important; 
+}
+
+.niveau2LiensFooter .langue a {
+    padding-left : 15px; 
+}
+
+.bas div ul li{
+    font-size: 15px; 
+    border-bottom: 0.5px solid rgb(255, 255, 255); 
+    width: 100%;
+    padding-top:2px; 
+    padding-bottom: 13px;
+    font-family: 'overpassbold', sans-serif;
+}
+
+.bas div ul li.sousMenuAideFooter{
+    border : none;
+    padding-bottom: 0;
+}
+
+.bas div ul li.sousMenuBoutiqueFooter{
+    padding-top:15px;
+}
+
+.bas div ul li ul li{
+    font-family: 'overpassthin', sans-serif;
+    font-size : 13px; 
+    border-bottom: none;
+}
+
+.bas i{
+    font-size : 15px; 
+}
+.reseau{
+    text-align: center;
+}
+.suivre{
+    text-align: center;
+    background: rgb(65, 65, 65);
+    color:#fff;
+    height: 100px;
+    padding-top:10px;
+}
+
+.suivre h4{
+    font-size:20px; 
+    font-family: 'overpassregular', sans-serif;
+    color:rgb(192, 191, 191); 
+}
+.suivre i{
+    color:rgb(192, 191, 191); 
+    font-size: 30px; 
+    width : 60px; 
+}
+
+.suivre i:hover{
+    color:#fff;
+}
+
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+
+/*********************************************/
+/****************** HEADER *******************/
+/*********************************************/
+
+/******** LOGO + PICTO ********/
+
+    .compte a img{
+        width: 20px; 
+    }
+
+/*=========== ACCUEIL ==============*/ 
+    .titreDescriptionAccueil{
+        position: absolute;
+        bottom: 5px; 
+        color : #000;
+        font-size: 0.3em !important; 
+        padding : 30px; 
+        text-align: center; 
+    }
+
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+
+/*********************************************/
+/****************** HEADER *******************/
+/*********************************************/
+    header{
+        height : 15%; 
+    }
+
+/******** LOGO + PICTO ********/
+
+    .picto{
+        justify-content: flex-end; 
+    }
+    .compte img{
+        width: 20px; 
+    }
+
+    .logoLPC{
+        display: none; 
+    }
+
+    .logoEntier{
+        width: 300px; 
+        padding: 20px; 
+        display: block; 
+        justify-content: flex-start;
+    }
+
+    .logo p{
+        justify-content: flex-start;
+        padding-left :20px; 
+        font-size:15px; 
+    }
+
+    .connexion a{
+        font-size: 10px; 
+    }
+
+    .cote-droit{
+        background: #fff; 
+    }
+
+    /********* MENU *********/
+
+    nav{
+        padding-top:20px; 
+        position :relative;
+        bottom : 0px; 
+        width : 100%; 
+        left : 0px; 
+        padding-left: 0px !important; 
+        padding-right: 0px !important; 
+
+    }
+
+    .pictoBurger{
+        display:none; 
+    }
+
+    .niveau1{
+        width: 100%; 
+        position: relative; 
+        left: 0px; 
+        top : -39px; 
+        margin: 0;  
+        border-top : 0.2px solid rgb(0, 0, 0);
+        border-bottom : 0.2px solid rgb(0, 0, 0);
+    }
+
+    .sousMenu{
+        border : none;
+        height : 50px; 
+    }
+
+    .niveau2{
+        margin-top:11px; 
+        border-bottom:0.5px solid black; 
+        border-left:0.5px solid black; 
+        border-right:0.5px solid black; 
+        padding:20px; 
+        background: #fff;
+        width : 220px; 
+    }
+    .niveau2 li {
+        text-align: left; 
+        line-height: 30px; 
+    }
+
+    .niveau2 li:hover{
+        font-weight: bold; 
+    }
+
+    /******** POP UP COMPTE CONNEXION ************/ 
+    .popUp{
+        width: 400px;
+        height:400px;  
+        position: absolute; 
+        left : 20%;    
+    }
+
+    .fondBlancPopUp{
+        height : 355px; 
+    }
+
+    .popUp p{
+        font-size : 1.2em; 
+    }
+
+    /********* RECHERCHE *********/
+    .rechercheXS input {
+        margin-left : 25%; 
+    }
+
+
+
+    /*********************************************/
+    /****************** MAIN *********************/
+    /*********************************************/
+
+    /*=============== ACCUEIL ===================*/
+
+    main{
+        padding: 140px 50px 0 50px; 
+    }    
+    
+    .photoFemmesSummer, .photoHommesSummer, .photoAccessoiresDesktop, .photoAccessoiresDesktop, .photoNouveautes, .photoEnfantsDesktop {
+        display: block; 
+    }
+
+    .photoAccessoiresMobile, .photoEnfantsMobile{
+        display: none; 
+    }
+
+    .lignePhoto, .ligneMilieu, .lignePhoto2, .lignePhoto1{
+        margin : 0 !important; 
+        padding: 0 !important; 
+    }
+
+    .lignePhoto, .lignePhoto2, .lignePhoto1{
+        margin-bottom : 40px !important; 
+    }
+
+    .ligneMilieu {
+        padding-left: 40px !important; 
+        padding-right : 40px !important; 
+        order :0; 
+    }
+
+    .photoEnfantsDesktop{
+        padding-right : 40px !important; 
+    }
+
+    .lignePhoto a h2{
+        font-size:0.9em; 
+    }
+
+    .lignePhoto a h3{
+        font-size: 0.8em;
+    }
+
+    .photoPromos .titrePhotoShow, .photoNouveautes .titrePhotoShow{
+        width : 100%; 
+        left : 0; 
+        bottom: 0; 
+        border : 0.5px solid black; 
+    }
+
+    .titrePhoto{
+        position: absolute;
+        bottom: 0px; 
+        background: #fff; 
+        width: 100%;   
+    }
+
+    .titrePhotoShow{
+        position: absolute;
+        bottom: 20%;
+        left : 10%; 
+        background: #fff; 
+        width: 80%; 
+        }
+
+    .titreDescriptionAccueil{
+        position: absolute;
+        bottom: 5px; 
+        color : #000;
+        font-size: 0.7em !important; 
+        padding : 30px; 
+        text-align: center; 
+    }
+
+    .blocTexteAccueil{
+        display:block; 
+    }
+
+
+    /******** MAP + AVIS ************/ 
+    .map_avis{
+        background: rgb(223, 223, 223);
+        padding : 30px; 
+        margin-bottom: 40px; 
+    }
+
+    .map{
+        padding: 40px 40px 40px 0 ; 
+        border : none; 
+        border-right:3px solid #fff;
+    }
+
+    .avis{
+    padding-left: 100px; 
+    }
+
+    .map div{
+        font-size: 6em; 
+        text-align: center; 
+    }
+    /******** RE-ASSURANCE ************/ 
+    .re-assurance a{
+        padding : 10px; 
+    }
+
+    .re-assurance div{
+        padding: 5px;
+        margin-bottom: 2px; 
+        border-bottom: none; 
+    }
+
+    /*============= PAGE CATALOGUE ===============*/ 
+
+    
+    .menuChoixCatalo{
+        text-align: center;
+    }
+
+    .menuChoixCatalo p{
+        margin-left: 1px;
+    }
+
+    .cataP h3{
+        margin-top: 10px;
+        font-family: 'overpasssemibold';
+        font-size: 1.5em;
+        
+    }
+
+    .imgAccueilCata:hover .titrePhotoCata {
+        -webkit-animation: slideInUp 1s 1;
+        animation: slideInUp 1s 1;
+        visibility: visible;
+        }
+        .titrePhotoCata{
+        visibility: hidden; 
+        }
+    
+    .titrePhotoCata{
+            position: absolute;
+            bottom: 85px; 
+            background: #fff;
+            height: 100px; 
+            width: 100%; 
+        }
+
+    .titrePhotoCata h3{
+        text-align: center;
+        margin-top: 25px;
+        
+
+    }  
+
+    .menuChoixCatalo{
+        margin-top: 50px;
+        margin-bottom: 5px;
+    }
+
+    .menuChoixCatalo{
+        margin-left: 150px;
+    }
+
+    .menuChoixCatalo p{
+        font-weight: bold;
+    }
+
+    .menuChoixCatalo .ui-selectmenu-button.ui-button{
+        width: 10em; 
+        text-align: center;
+        margin-top : 20px; 
+    }
+    
+    .menuChoixCatalo .ui-selectmenu-text{
+        font-size: 1em; 
+    }
+    
+    /*====================PAGE AVIS=======================*/
+
+    .avisGene{
+        margin-top: 1px;
+    }
+
+    /*============= PAGE PRODUIT ================*/ 
+
+    .articleSimilaire{
+        margin-top : 70px;
+        margin-left : -10px; 
+    }
+
+    .articleSimilaire div img{
+        width : 100%; 
+    }
+
+    .articleSimi1{
+        width : 20%;
+        margin-left : 0px; 
+    }
+
+    /*============= PAGE ARTICLE ===============*/ 
+    .articlePageTexte2{
+        width : 50%; 
+    }
+
+    .pageArticleContenu{
+        width : 60%; 
+        margin : 0 auto 100px auto; 
+    }
+
+    /*================ PAGE FAQ ===============*/ 
+    .faq .questions p{
+        font-size : 1em; 
+        padding : 10px 100px 0px 100px; 
+    }
+
+    .faq .questions:last-child{
+        padding-bottom :100px
+    }
+
+    .ancre{
+        display: block; 
+        margin-top : -200px; 
+        padding-top : 200px; 
+    }
+
+    /*================= PAGE FAVORI ==================*/
+    .ligneFavori{
+        width : 70%; 
+    }
+
+    .ligneFavori i{
+        text-align: left; 
+        margin-top : 0; 
+    }
+
+    .ligneFavori img{
+        margin: 0 auto;
+        width : 20px; 
+    }
+
+    .ligneFavori .ui-selectmenu-button.ui-button{
+        margin-top : 0; 
+    }
+
+    .ligneFavori p{
+        margin-top : 0; 
+    }
+
+    .favoriVide{
+        width : 50%; 
+    }
+
+    /*================= PAGE PANIER ==================*/
+    .lignePanier{
+        width : 70%; 
+    }
+
+    .lignePanier i{
+        text-align: left; 
+        margin-top : 0; 
+    }
+
+    .lignePanier img{
+        margin: 0 auto;
+        width : 20px; 
+    }
+
+    .lignePanier .ui-selectmenu-button.ui-button{
+        margin-top : 0; 
+    }
+
+    .lignePanier p{
+        margin-top : 0; 
+    }
+
+    .PanierVide{
+        width : 50%; 
+    }
+
+    /*================ PAGE MENTIONS LEGALES ===============*/ 
+
+.mentionslegales h2{
+    font-size : 1.2em; 
+    margin-top: 50px; 
+}
+.mentionslegales p{
+    padding : 0 100px; 
+    font-size: 0.8em; 
+}
+
+.mentionslegales{
+    margin-bottom: 100px; 
+}
+
+    
+
+    /*********************************************/
+    /****************** FOOTER *********************/
+    /*********************************************/
+    .niveau2LiensFooter .langue a {
+        padding-left : 0px; 
+    }
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    /*============= ACCUEIL ===============*/ 
+    /******** LOGO + RECHERCHE ********/
+    .recherche{
+        display: none; 
+    }
+
+    .rechercheLG{
+        display: block; 
+        font-size : 12px;
+    }
+
+    .rechercheLG{
+        position: relative;
+        top : -60px; 
+        left : 35%; 
+    }
+    .rechercheLG button{
+        background: #fff; 
+        border: none; 
+    }
+    .rechercheLG button img{
+        width :20px; 
+    }
+
+    .rechercheLG input{
+        border : none; 
+        border-bottom : 0.5px solid black; 
+        width: 300px; 
+        color : rgb(90, 90, 90); 
+        padding-bottom: 5px; 
+        padding-left: 5px; 
+    }
+
+
+    /***** ANIMATION TITRE PHOTO ACCUEIL ****/ 
+    .imgAccueil:hover .titrePhoto {
+    -webkit-animation: slideInUp 1s 1;
+    animation: slideInUp 1s 1;
+    visibility: visible;
+    }
+    .titrePhoto{
+    visibility: hidden; 
+    }
+
+    .lignePhoto a h2{
+        font-size:1.3em; 
+    }
+
+    .lignePhoto a h3{
+        font-size: 1.2em;
+    }
+
+    .titreDescriptionAccueil{
+        position: absolute;
+        bottom: 30px; 
+        color : #000;
+        padding : 50px; 
+        text-align: center; 
+        font-size: 1em !important; 
+    }
+
+    /*============= PAGE PRESSE / BLOG ===============*/ 
+
+    .article{
+        width : 80%; 
+    }
+    .articleTexte{
+        height: 50%; 
+    }
+    
+    .articleTexteDroite{
+        position : relative; 
+        left : -10%; 
+        top : 55px; 
+    }
+    .articleTexteGauche{
+        position : relative; 
+        left : 10%; 
+        top : 55px; 
+        z-index: 10; 
+    }
+
+    
+
+
+    /*********************************************/
+    /****************** FOOTER *******************/
+    /*********************************************/
+
+    /******** BAS *********/
+
+    .bas{
+        padding-top: 20px; 
+    }
+    .niveau2BoutiqueFooter, .niveau2ActuFooter, .niveau2LiensFooter, .niveau2AideFooter{
+        display: block;  
+    }
+
+    .liste{
+        padding-top:10px;
+        margin : 0px; 
+    }
+
+    .bas div ul li a{
+        margin :0; 
+    }
+
+    .bas div ul li.sousMenuBoutiqueFooter{
+        padding: 0;
+    }
+
+    .bas i{
+        display: none;
+    }
+
+    .bas div ul li{
+        border:none; 
+        margin: 0px; 
+    }
+
+    .bas div ul li ul li{
+        padding : 0px; 
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+
+
+}
+
+
+
+
+
+

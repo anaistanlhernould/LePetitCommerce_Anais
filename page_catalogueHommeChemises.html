@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+    <html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <link rel="stylesheet" href="CSS/Bootstrap/bootstrap.min.css">
+        <link rel="stylesheet" href="CSS/Font/font.css">
+        <link rel="stylesheet" href="CSS/animate.css">
+        <link rel="stylesheet" href="CSS/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" integrity="sha256-UzFD2WYH2U1dQpKDjjZK72VtPeWP50NoJjd26rnAdUI=" crossorigin="anonymous" />
+        <link rel="stylesheet" href="CSS/Jquery/jquery-ui.min.css">
+        <script>
+        </script>
+
+        <title>LePetitCommerce - Hommes/Chemises</title>
+        <meta name="description" content="Découvrez toutes notre collection de de chemises hommes">
+    </head>
+
+    <body> 
+        <header class="fixed-top">
+                <div class="cote-droit row">
+                    <div class="logo col-4 offset-2 col-md-5 offset-md-0">
+                        <a href="index.html"> <img class="logoEntier" src="Multi/Logo/logoEntier.png" alt=" Logo du site LePetitCommerce.fr">
+                        <img class="logoLPC" src="Multi/Logo/logoLPC.png" 
+                        alt=" Picto LePetitCommerce.fr">
+                        <p> Collection 19</p>
+                    </a>
+                    </div>
+                    <div class="picto col-6 col-md-5 offset-md-2 offset-lg-2 row ">
+                        <div class="popUpCompte col col-lg offset-lg-5">
+                            <div class="fondOpacity"></div>
+                            <div class="connexion">
+                                <div class="compte">
+                                    <a href="#" id="boutonPopUpCompte" class="lienPopUp"><img src="Multi/Picto/007-account.png" alt=" Picto de compte "></a> 
+                                </div>
+                                <div id="popUp" class="popUp position-fixed offset-2">
+                                    <div class="fondBlancPopUp">
+                                        <p> Mon compte client</p>
+                                        <form action="fichier.php">
+                                            <input type="email" name="userName" id="userName" class="userName" value=" Votre Adresse-email : " required>
+                                            <br>
+                                            <input type="password" name="pwd" id="pwd" value="...." required>
+                                            <br>
+                                            <input type="submit"
+                                            id="submitCompte" value="Se connecter">
+                                            <br>
+                                        </form>
+                                        <p><a href="#"> Mot de passe oublié </a></p> 
+                                        <p> <a href="#"> Pas encore inscrit ? Inscrivez-vous.</a></p>
+                                    </div>
+                                </div>
+                            </div>            
+                        </div>
+
+                        <div class="compte recherche col col-lg">
+                            <a href="#" id="boutonSearch"> <img src="Multi/Picto/012-glass.png" alt=" Picto de compte ">
+                            </a>
+                            <div class="rechercheXS sticky-top">
+                                <input type="search" id="site-search" name="q"
+                                aria-label="Search through site content" maxlength="50" value="Chercher un produit :">
+                                <button> <img src="Multi/Picto/012-glass.png" alt=""></button>
+                            </div>
+                        </div>
+
+                        <div class="compte favori col col-lg">
+                            <a href="page_favori.html"> <img src="Multi/Picto/001-heart.png" alt=" Picto de favori ">
+                            </a>
+                        </div>
+
+                        <div class="compte panier col col-lg">
+                            <a href="page_panier.html"> <img src="Multi/Picto/011-cart.png" alt=" Picto de panier">
+                            </a>
+                        </div>
+                    </div>                        
+
+                    <div class="rechercheLG">
+                            <input type="search" id="site-search1" name="q"
+                            aria-label="Search through site content" maxlength="50" value="Chercher un produit :">
+                            <button> <img src="Multi/Picto/012-glass.png" alt="Picto de loupe"></button>
+                            <br>
+                    </div>             
+                </div> 
+
+                    <nav class="col-6 col-md-12">
+                        <a href="#" id="menuBurger"><img class="pictoBurger" src="Multi/Picto/002-menu.png" alt=" Picto menu hamburger"></a> 
+                        <ul class="niveau1 col-md-12 row">
+                            <li class ="sousMenu sousMenuFemme col-md-2 offset-md-1"> <a href="#" id="FemmesMenu">Femmes</a> 
+                                <ul class="niveau2 niveau2Femme">
+                                    <li><a href="page_catalogueFemmeJupes&Combi.html"> Jupes & Combinaisons </a></li>
+                                    <li><a href="page_catalogueFemmeTops&Chemises.html"> Tops & Chemises</a></li>
+                                    <li><a href="page_catalogueFemmeRobes.html"> Robes </a></li>
+                                    <li><a href="page_catalogueFemmePantalon.html"> Pantalons & Shorts </a></li>
+                                    <li><a href="page_catalogueFemmeVestes.html"> Vestes </a></li>
+                                    <li><a href="page_catalogueFemmeAcess.html"> Accessoires </a></li>
+                                </ul>
+                            </li>
+                            <li class ="sousMenu sousMenuHomme col-md-2"> <a href="#" id="HommesMenu">Hommes</a> 
+                                <ul class="niveau2 niveau2Homme">
+                                    <li><a href="page_catalogueHommeVeste&Blousons.html"> Vestes & Blousons </a></li>
+                                    <li><a href="page_catalogueHommeChemises.html"> Chemises </a></li>
+                                    <li><a href="page_catalogueHommeTee&Polo.html"> T-shirts & Polos </a></li>
+                                    <li><a href="page_catalogueHommePantalon&Shorts.html"> Pantalons & Shorts </a></li>
+                                    <li><a href="page_catalogueHommeAcess.html"> Accessoires </a></li>
+                                </ul>
+                            </li>
+                            <li class ="sousMenu sousMenuEnfant col-md-2"> <a href="#" id="EnfantsMenu"> Enfants</a>
+                                <ul class="niveau2 niveau2Enfant">
+                                    <li><a href="page_catalogueHommeTee&Polo.html"> T-shirts & Pulls </a></li>
+                                    <li><a href="page_catalogueHommePantalon&Shorts.html"> Pantalons & Shorts </a></li>
+                                    <li><a href="page_catalogueHommeChemises.html"> Ensembles </a></li>
+                                    <li><a href="page_catalogueHommeAcess.html"> Accessoires </a></li>
+                                </ul>
+                            </li>
+                            <li class ="sousMenu sousMenuAccessoire col-md-2"> <a href="#" id="AccessoiresMenu">Accessoires</a> 
+                                <ul class="niveau2 niveau2Accessoire">
+                                    <li><a href="page_catalogueHommePantalon&Shorts.html"> Chapeaux & Bonnets </a></li>
+                                    <li><a href="page_catalogueHommeAcess.html"> Bijoux </a></li>
+                                    <li><a href="page_catalogueHommeTee&Polo.html"> Maroquinerie </a></li>
+                                    <li><a href="page_catalogueFemmeVestes.html"> Chaussures </a></li>
+                                </ul>
+                            </li>
+                            <li class ="sousMenu sousMenuBoutique col-md-3"> <a href="#" id="BoutiquesMenu">La boutique</a> 
+                                <ul class="niveau2 niveau2Boutique">
+                                    <li><a href="page_quiSommeNous.html">Qui sommes-nous</a></li>
+                                    <li><a href="page_contact.html">Contact</a></li>
+                                    <li><a href="page_recrutement.html">Recrutement</a></li>
+                                    <li><a href="page_evenements.html">Evenement</a></li>
+                                    <li><a href="page_presse.html">Presse</a></li>
+                                    <li><a href="page_blog.html">Actualités</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+        </header>
+
+        <main>
+            <div class="tri" >
+                <form action="fichier.php" method="get" id="menuChoixTaille" class="row menuChoixCatalo">
+
+                            <div class="col-3 col-md-2 offet-md-1">
+                                <p>Trier par :</p>
+                                <select id="selectmenu1" class="menuChoixTrierCatalo">
+                                    <option value="recommande">Recommandé</option>
+                                    <option value="plusRecent">Plus récent</option>
+                                    <option value="plusBasPrix">Plus bas prix</option>
+                                    <option value="plusHautPrix">Plus haut prix</option>
+                                </select>
+                            </div>
+
+                            <div class="col-2 col-md-2">
+                                <p>Type : </p>
+                                <select id="selectmenu2" class="menuChoixTypeCatalo">
+                                    <option value="blouse">Blouse</option>
+                                    <option value="body">Body</option>
+                                    <option value="bustier">Bustier</option>
+                                    <option value="pull">Pull</option>
+                                    <option value="sweat">Sweat</option>
+                                </select>
+                            </div>
+
+                            <div class="col-2 col-md-2">
+                                <p>Style : </p>
+                                <select id="selectmenu3" class="menuChoixStyleCatalo">
+                                    <option value="polo">Polo</option>
+                                    <option value="colDroit">Col droit</option>
+                                    <option value="hautCapuche">Haut à capuche</option>
+                                    <option value="debardeur">Débardeur</option>
+                                    <option value="pantalonMolleton">Pantalon en molleton</option>
+                                </select>
+                            </div>
+
+                            <div class="col-2 col-md-2">
+                                <p>Taille :</p>
+                                <select id="selectmenu4" class="menuChoixTailleCatalo">
+                                    <option value="xs">XS</option>
+                                    <option value="s">S</option>
+                                    <option value="m">M</option>
+                                    <option value="l">L</option>
+                                    <option value="xl">XL</option>
+                                </select>
+                            </div>
+
+                            <div class="col-3 col-md-2 offet-md-mr-1">
+                                <p>Couleur :</p>
+                                <select id="selectmenu5" class="menuChoixCouleurCatalo">
+                                    <option value="noire">Noir</option>
+                                    <option value="blanc">Blanc</option>
+                                    <option value="rouge">Rouge</option>
+                                    <option value="bleu">Bleu</option>
+                                    <option value="violet">Violet</option>
+                                </select>
+                            </div>
+                                           
+                </form>
+            </div>
+        
+            <div class="cataP">
+                <div class="row ligneCata1">
+        
+                    <div class="col-md-6">
+                        <a href="02_page_produit_chemise_homme.html" class="imgAccueilCata"><img class="pantalon" src="Multi/Photo/catalogueHChemises/newchemise1.jpg" alt="photo de chemise bleu">
+                        <div class="titrePhotoCata">
+                                <h3>Ajoutez au panier</h3>                
+                        </div>  
+                        </a>
+                        <h3><a href="02_page_produit_chemise_homme.html">CHEMISE BLEU</a></h3>
+                        <p>32.00 EUR</p>     
+                    </div>
+        
+                    <div class="col-md-6">
+                        <a href="02_page_produit_chemise_homme.html" class="imgAccueilCata"><img src="Multi/Photo/catalogueHChemises/chemise2.jpg" alt="photo de chemise structuree">
+                        <div class="titrePhotoCata">
+                                <h3>Ajoutez au panier</h3>                       
+                        </div>
+                        </a>  
+                        <h3><a href="02_page_produit_chemise_homme.html">CHEMISE STRUCTUREE</a></h3>
+                        <p>39.00 EUR</p>                   
+                    </div>
+        
+                </div>
+        
+                <div class="row ligneCata2">
+        
+                    <div class="col-md-6">
+                        <a href="02_page_produit_chemise_homme.html" class="imgAccueilCata"><img src="Multi/Photo/catalogueHChemises/chemise3.jpg" alt="photo de chemise taillored">
+                        <div class="titrePhotoCata">
+                                <h3>Ajoutez au panier</h3>                  
+                        </div> 
+                        </a>
+                        <h3><a href="02_page_produit_chemise_homme.html">CHEMISE TAILLORED</a></h3>
+                        <p>42.00 EUR</p>                             
+                    </div>
+        
+                    <div class="col-md-6">
+                        <a href="02_page_produit_chemise_homme.html" class="imgAccueilCata"><img src="Multi/Photo/catalogueHChemises/chemise4.jpg" alt="photo de chemise milleraies">
+                        <div class="titrePhotoCata">
+                                <h3>Ajoutez au panier</h3> 
+                        </div> 
+                        </a>
+                        <h3><a href="02_page_produit_chemise_homme.html">CHEMISE MILLERAIES</a></h3>
+                        <p>69.00 EUR</p>    
+                    </div>
+
+                </div>
+        
+                <div class="row ligneCata3">
+        
+                    <div class="col-md-6">
+                        <a href="02_page_produit_chemise_homme.html" class="imgAccueilCata"><img src="Multi/Photo/catalogueHChemises/chemise5.jpg" alt="photo de chemise coton">
+                        <div class="titrePhotoCata">
+                                <h3>Ajoutez au panier</h3>                                
+                        </div>
+                        </a>  
+                        <h3><a href="02_page_produit_chemise_homme.html">CHEMISE COTON</a></h3>
+                        <p>53.00 EUR</p>
+                    </div>
+        
+                    <div class="col-md-6">
+                        <a href="02_page_produit_chemise_homme.html" class="imgAccueilCata"><img src="Multi/Photo/catalogueHChemises/chemise6.jpg" alt="photo de chemise carreaux">
+                        <div class="titrePhotoCata">
+                                <h3>Ajoutez au panier</h3>                        
+                        </div>
+                        </a>
+                        <h3><a href="02_page_produit_chemise_homme.html">CHEMISE CARREAUX</a></h3>
+                        <p>32.00 EUR</p>                                  
+                    </div>
+        
+                </div>
+
+            </div>
+            
+        </main>
+
+        <footer>            
+        <section class="re-assurance row ">
+            <div class="col-6 col-md-3">
+                <a href="#">
+                    <h3> Retours Gratuits </h3>
+                    <p>Jusqu'à 30 jours après la réception de la commande.</p>
+                    <i class="fas fa-undo"></i>
+                </a>
+            </div>
+            <div class="col-6 col-md-3">
+                <a href="#">
+                    <h3> Livraison Offerte </h3>
+                    <p> A partir de 40€ de commande.</p>
+                    <i class="fas fa-dolly"></i>
+                </a>
+            </div>
+            <div class="col-6 col-md-3">
+                <a href="#">
+                    <h3> SAV 24H/24 </h3>
+                    <p>Notre équipe est à votre écoute par mail, téléphone et courrier.</p>
+                    <i class="fas fa-headset"></i>
+                </a>
+            </div>
+            <div class="col-6 col-md-3">
+                <a href="#">
+                    <h3> Paiement sécurisé </h3>
+                    <p> Bénéficiez d'un paiement sécurisé sur tout le site</p>
+                    <i class="far fa-credit-card"></i>
+                </a>
+            </div>
+        </section>
+        <div class="row">
+                <div class="news col-12">
+                    <form method="get" action="ficher.php" class="FormNews">
+                        <p class="inscrit">Inscrivez-vous à la newsletter</p>
+                        <p class="newsTexte">Inscrivez-vous à notre newsletter et recevez des infos sur les dernières tendances, nos nouveautés, et des offres exclusives. <br> Vous pouvez vous désabonner à tout moment</p>
+                        <input type="email" id="email" name="email" value="Adresse E-mail : " maxlength="50">
+                        <input id="btnEmail" type="submit" value=" Je m'abonne">
+                    </form>
+                </div> 
+            </div>
+
+            <div class="row bas ">
+                <div class="boutique col-12 col-lg-2 offset-lg-2 ">
+                    <ul class="niveau1BoutiqueFooter">
+                        <li class="sousMenuBoutiqueFooter row"> 
+                            <a class ="col-4 offset-2 col-lg-12" href="#"> La boutique</a> 
+                            <i class="fas fa-plus col-3 offset-3"></i>
+                            <ul class="liste niveau2BoutiqueFooter col-lg-12 ">
+                                <li><a href="page_quiSommeNous.html">Qui sommes-nous ? </a></li>
+                                <li><a href="page_contact.html">Contact</a></li>
+                                <li><a href="page_recrutement.html"> Rejoint notre équipe</a></li>
+                                <li><a href="page_evenements.html"> Évènements </a></li>
+                                <li><a href="page_presse.html">On parle de nous </a></li>
+                            </ul>
+                        </li> 
+                    </ul>
+                </div>
+                <div class="actu col-12 col-lg-2">
+                    <ul class="niveau1ActuFooter">
+                        <li class="sousMenuActuFooter row"> 
+                            <a class ="col-4 offset-2 col-lg-12" href="page_blog.html"> Actualités</a>
+                            <i class="fas fa-plus col-3 offset-3"></i>
+                            <ul class="liste niveau2ActuFooter col-lg-12">
+                                <li><a href="page_article1.html"> Comment porter la capeline ? </a></li>
+                                <li><a href="page_article1.html"> Fibres, jute, paille : les accessoires en mode nature </a></li>
+                                <li><a href="page_article1.html"> "Dad shoes" : les nouvelles baskets à la mode </a></li>
+                                <li><a href="page_article1.html"> Comment transformer une tenue de jour en tenue du soir ? </a></li>
+                            </ul>
+                        </li> 
+                    </ul>
+                </div>
+                <div class="Liens col-12 col-lg-2" id="liensFooter">
+                    <ul class="niveau1LiensFooter">
+                        <li class="sousMenuLiensFooter row"> 
+                            <a class ="col-4 offset-2 col-lg-12" href="#liensFooter"> Divers</a> 
+                            <i class="fas fa-plus col-3 offset-3"></i>
+                            <ul class="liste niveau2LiensFooter col-lg-12">
+                                <li><a href="page_mentions_legales.html">Mentions Légales</a></li>
+                                <li><a href="page_plan_du_site.html">Plan du site</a></li>
+                                <li class="row langue">
+                                    <a href="#">FR | </a>
+                                    <a href="#">EN </a>
+                                </li>
+                            </ul>
+                        </li> 
+                    </ul>
+                </div>
+                <div class="aide col-12 col-lg-3">
+                    <ul class="niveau1AideFooter">
+                        <li class="sousMenuAideFooter row"> 
+                            <a class ="col-4 offset-2 col-lg-12" href="#"> Aides </a>
+                            <i class="fas fa-plus col-3 offset-3"></i>
+                            <ul class="liste niveau2AideFooter col-lg-12 offset-lg-3">
+                                    <li><a href="page_questions_frequentes.html">Questions fréquentes</a></li>
+                                    <li><a href="page_questions_frequentes.html#question1">Où est ma commande ?</a></li>
+                                    <li><a href="page_questions_frequentes.html#question2">Comment j'échange ou retourne un article acheté en ligne ?</a></li>
+                                    <li><a href="page_questions_frequentes.html#question3">Puis-je annuler ou modifier ma commande ?</a></li>
+                                    <li><a href="page_questions_frequentes.html#question4">Les articles reçus ne sont pas corrects ou présentent un défaut. Que dois-je faire ?</a></li>
+                            </ul>
+                        </li> 
+                    </ul>
+                </div>
+            </div>
+            <div class="suivre col-12">
+                <h4>Nous suivre</h4>
+                <div class="reseau row">
+                    <a class="col" href="https://fr-fr.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a class="col" href="https://www.instagram.com/?hl=fr" target="_blank"> <i class="fab fa-instagram"></i></a>
+                    <a class="col" href="https://twitter.com/?lang=fr" target="_blank"> <i class="fab fa-twitter"></i></a>
+                    <a class="col" href="https://www.pinterest.fr/" target="_blank"> <i class="fab fa-pinterest-p"></i></a>
+                </div>
+            </div>
+            
+        </footer>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="JS/Bootstrap/bootstrap.min.js"></script>        
+        <script src="JS/script-index.js"></script>
+        <script src="JS/Jquery/jquery-ui.min.js"></script>
+
+        <script>
+            $( "#selectmenu1" ).selectmenu();
+            $( "#selectmenu2" ).selectmenu();
+            $( "#selectmenu3" ).selectmenu();
+            $( "#selectmenu4" ).selectmenu();
+            $( "#selectmenu5" ).selectmenu();
+
+            $(function(){
+                $(".cataP img").hover(
+                    function(){
+                    $(this).stop().fadeTo(500,0.6)
+                    }, 
+                    function(){
+                        $(this).stop().fadeTo(100,1);
+                });
+            });
+            
+            $( "#accordion" ).accordion();
+        </script>
+
+    </body> 
+</html>
